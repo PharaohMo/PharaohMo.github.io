@@ -209,6 +209,16 @@ li {
   margin-bottom: 0;
 }
 
+.panel > h2:first-child,
+.panel > h3:first-child {
+  margin-top: 0;
+}
+
+/* Odds pages: an announced change, or odds not in effect yet */
+.notice {
+  border-color: var(--gold);
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -285,6 +295,86 @@ li {
   font-size: 14px;
 }
 
+/* Tables (odds page) */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 0 16px;
+  background: var(--panel);
+  border: 1px solid var(--border-dim);
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+th,
+td {
+  padding: 7px 10px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(78, 107, 108, 0.45);
+}
+
+thead th {
+  background: var(--bg);
+  color: var(--gold-bright);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+tbody th {
+  font-weight: 700;
+}
+
+tbody tr:last-child th,
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+th.num,
+td.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+td.num {
+  white-space: nowrap;
+}
+
+table.lineages td {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.toc ol {
+  list-style: none;
+  padding-left: 0;
+  columns: 2;
+  column-gap: 24px;
+}
+
+.toc li {
+  margin-bottom: 4px;
+  break-inside: avoid;
+}
+
+section[lang] {
+  margin-top: 40px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border-dim);
+}
+
+/* Korean breaks between words, not inside them. */
+[lang='ko'] {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--border-dim);
@@ -317,5 +407,15 @@ li {
   }
   .hero-art {
     min-height: 300px;
+  }
+  table {
+    font-size: 14px;
+  }
+  th,
+  td {
+    padding: 6px 8px;
+  }
+  .toc ol {
+    columns: 1;
   }
 }
