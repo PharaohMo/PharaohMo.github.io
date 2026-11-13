@@ -30,8 +30,8 @@
     <main class="wrap">
       <h1>Privacy Policy</h1>
       <p class="updated">
-        Effective November 7, 2026. This update changes wording only, not how the game handles
-        your data.
+        Effective November 13, 2026. This update adds a second ad service, Unity LevelPlay
+        (section 2), and achievements and leaderboards in Game Center (section 9).
       </p>
 
       <p>
@@ -44,17 +44,24 @@
         <p><strong>The short version</strong></p>
         <ul>
           <li>
-            There are no accounts. Your progress is saved on your device, and your own device
-            backups may include it.
+            The game has no accounts of its own. Your progress is saved on your device, and your
+            own device backups may include it.
           </li>
           <li>
             We do not run servers, and we do not collect or sell your personal data. We only
             receive what you choose to email us.
           </li>
           <li>
-            The game shows ads from Google AdMob. Google may collect device identifiers and
-            related data to show and measure ads, subject to the choices you make in the game
-            and on your device.
+            The game shows ads from Google AdMob and from Unity LevelPlay (ironSource Ads and
+            Unity Ads). These companies may collect device identifiers and related data to show
+            and measure ads, subject to the choices you make in the game and on your device.
+          </li>
+          <li>
+            Achievements and leaderboards use your device's game service (on iPhone and iPad,
+            Apple's Game Center), and the game plays the same without them. The service may start
+            when the game starts and sign you in by itself if you already use it. While you are
+            signed in, the game sends it the achievements you unlock and your best scores. The
+            service may also collect diagnostics about its own software, under its own policy.
           </li>
           <li>
             Purchases are handled by the app store you downloaded the game from. We never see your
@@ -71,7 +78,12 @@
         <li>
           a record of in-app purchases the game has delivered (the product and the store's
           transaction identifier, so a purchase is never granted twice) and whether you own
-          Remove Ads.
+          Remove Ads;
+        </li>
+        <li>
+          if you use achievements and leaderboards (section 9), a record of the achievements and
+          scores the game has already sent to your device's game service for the player signed
+          in to it, so it does not send them twice.
         </li>
       </ul>
       <p>
@@ -85,42 +97,77 @@
         are not guaranteed to include the game.
       </p>
 
-      <h2>2. Advertising (Google AdMob)</h2>
+      <h2>2. Advertising (Google AdMob and Unity LevelPlay)</h2>
       <p>
-        The game shows ads through the Google Mobile Ads SDK from Google LLC ("AdMob"). Ads
-        appear when you choose to watch one for a reward, and some may appear after a run ends.
-        When ads are requested or shown, Google may collect and process:
+        The game shows ads from two ad services. Ads appear when you choose to watch one for a
+        reward, and some may appear after a run ends. Each ad comes from one of them:
+      </p>
+      <ul>
+        <li>
+          <strong>Google AdMob:</strong> the Google Mobile Ads SDK from Google LLC ("AdMob").
+        </li>
+        <li>
+          <strong>Unity LevelPlay:</strong> an ad mediation service from Unity Technologies and
+          its affiliate ironSource ("Unity"), which shows ads from the ad networks it works with,
+          currently <strong>ironSource Ads</strong> and <strong>Unity Ads</strong>. If the game
+          starts using another ad network through LevelPlay, we will update this policy.
+        </li>
+      </ul>
+      <p>
+        When the game starts these services, and when ads are requested or shown, these
+        companies may collect and process:
       </p>
       <ul>
         <li>
           device identifiers, such as your device's advertising identifier (on iOS, only if you
-          allow tracking);
+          allow tracking), and identifiers an ad service assigns to the game on your device;
         </li>
         <li>your IP address and the approximate location derived from it;</li>
         <li>information about the ads you see and interact with;</li>
-        <li>app, device and diagnostic information, such as crash and performance data.</li>
+        <li>
+          app, device and diagnostic information, such as the device model, language and
+          connection type, and crash and performance data;
+        </li>
+        <li>for Unity Ads, purchase history, as listed in Unity's data disclosures for its ads.</li>
       </ul>
       <p>
-        Google uses this information to show and measure ads, for analytics, and to prevent
-        fraud and abuse. Google is responsible for this processing. See
+        They use this information to show and measure ads, for analytics, and to prevent fraud
+        and abuse. Each company is responsible for its own processing, under its own privacy
+        policy. See
         <a href="https://policies.google.com/technologies/partner-sites"
           >how Google uses information from apps that use its services</a
+        >,
+        <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>, Unity's
+        <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy"
+          >Game Player and App User Privacy Policy</a
         >
-        and <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.
+        (which also covers ironSource) and
+        <a href="https://unity.com/legal/privacy-policy">Unity's privacy policies</a>.
+      </p>
+      <p>
+        So that our own test devices never show real ads, the game checks whether it is running
+        on one of them: when your device's advertising identifier is available to the game, it
+        compares a one-way code (a hash) made from the identifier with a short list built into
+        the game. This check happens only on your device, and the game does not keep the
+        identifier or send it to us.
       </p>
       <h3>Your choices</h3>
       <ul>
         <li>
           <strong>European Economic Area, United Kingdom and Switzerland:</strong> the game asks
-          for your consent through Google's consent form before personalized ads are shown. You
-          can change your choice at any time with <em>Privacy choices</em> in the game's
-          Settings.
+          for your consent through Google's consent form before personalized ads are shown, and
+          passes your choice on to Unity LevelPlay and its ad networks. You can change your
+          choice at any time with <em>Privacy choices</em> in the game's Settings.
         </li>
         <li>
           <strong>iPhone and iPad:</strong> the game asks for permission to track through
           Apple's App Tracking Transparency prompt. If you decline, your advertising identifier
-          is not shared, and ads are not personalized based on tracking. You can change this in
-          iOS Settings → Privacy &amp; Security → Tracking.
+          is not shared with any of these ad services, and ads are not personalized based on
+          tracking. You can change this in iOS Settings → Privacy &amp; Security → Tracking.
+        </li>
+        <li>
+          <strong>In Unity's ads:</strong> ads from Unity Ads can show a privacy icon, where you
+          can opt out of personalized ads from Unity.
         </li>
         <li>
           <strong>Advertising ID:</strong> where your device lets you reset or delete your
@@ -147,19 +194,23 @@
       <h2>4. Children</h2>
       <p>
         The game is not directed at children under 13, and we do not knowingly collect personal
-        information from children under 13. Ads in the game are limited to Google's PG
-        (parental guidance) ad content rating: content suitable for most audiences with parental
-        guidance. If you believe a child has provided personal information through the game,
-        contact us and we will help.
+        information from children under 13. The game tells every ad service that it is not
+        directed at children. Ads in the game are limited to content suitable for most audiences
+        with parental guidance: Google's PG (parental guidance) ad content rating on AdMob, and
+        matching content settings for ironSource Ads and Unity Ads. If you believe a child has
+        provided personal information through the game, contact us and we will help.
       </p>
 
       <h2>5. Sharing and selling</h2>
       <p>
         We do not sell personal information, and we do not share any information ourselves:
         the game does not send us any, and we do not share emails you send us. The third
-        parties that may receive information when you play are Google (for ads, as described
-        above) and the app store you downloaded the game from (to deliver the app, updates and
-        purchases, under its own policies).
+        parties that may receive information when you play are Google and Unity (for ads, as
+        described above), your device's game service (on iPhone and iPad, Apple's Game Center;
+        section 9: your achievements and scores while you are signed in to it, and diagnostics
+        about its own software that it may collect whether or not you are), and the app store you
+        downloaded the game from (to deliver the app, updates and purchases, under its own
+        policies).
       </p>
 
       <h2>6. Your rights</h2>
@@ -168,16 +219,17 @@
         the processing of your personal information, or to opt out of personalized advertising.
         Because we do not hold your data (other than emails you send us), you can exercise
         these rights with the in-game <em>Privacy choices</em>, your device settings, or
-        directly with Google or the app store you used. You can also contact us, and we will
-        help you with your request. You may have the right to complain to your local data
-        protection authority.
+        directly with Google, Unity, your game service (for Game Center, Apple) or the app store
+        you used. You can also contact us, and we will help you with your request. You may have
+        the right to complain to your local data protection authority.
       </p>
 
       <h2>7. Security</h2>
       <p>
         Your progress is stored on your device and is never sent to us. Device backups are kept
-        by your device's platform provider under its own security measures. Communication between the ads SDK
-        and Google, and between the game and the app stores, is encrypted in transit.
+        by your device's platform provider under its own security measures. Communication
+        between the ad SDKs and Google and Unity, between the game and your device's game
+        service, and between the game and the app stores, is encrypted in transit.
       </p>
 
       <h2>8. Data retention and deletion</h2>
@@ -200,27 +252,63 @@
           <em>Report a problem</em> or <em>Email support</em> in the game, we receive your email
           address, your message and the details the game adds to it: the date, time and time
           zone, your device platform and system version, the game version and, for a problem
-          report, your device type or model, which ads the build shows, the last save error, the
-          game's audio settings and state, the device's audio state (such as the volume, the
-          ringer mode and whether another app or a call is using audio), the types of audio
+          report, your device type or model, which ads the build shows and which ad service
+          showed the last ad, the last save error, the game's audio settings and state, the
+          device's audio state (such as the volume, the ringer mode and whether another app or a
+          call is using audio), the types of audio
           outputs (for example the built-in speaker or Bluetooth headphones, never a device's
           name) and technical details about what the game was doing. We keep these emails only as
           long as we need them to help you, and then delete them. You can ask us to delete them
           sooner.
         </li>
         <li>
-          <strong>Google and the app store:</strong> information that Google collects for ads, and
-          that the app store keeps about your purchases, is retained under their own policies.
+          <strong>Ad services, game services and the app store:</strong> information that Google
+          and Unity collect for ads, that your device's game service keeps for your profile,
+          achievements and leaderboards, and that the app store keeps about your purchases, is
+          retained under their own policies.
         </li>
       </ul>
 
-      <h2>9. Changes to this policy</h2>
+      <h2>9. Achievements and leaderboards (Game Center)</h2>
+      <p>
+        The game can send your achievements and best scores to the game service on your
+        device. On iPhone and iPad, that is Apple's Game Center. You don't need it: the game plays
+        the same without it. If you are already signed in to Game Center on your device, it signs
+        you in to the game by itself. While you are signed in to Game Center:
+      </p>
+      <ul>
+        <li>
+          the game sends Game Center the achievements you unlock and your best results for its
+          leaderboards (such as the deepest wave you reached in Endless), including ones you
+          earned before you signed in;
+        </li>
+        <li>
+          Game Center shows them on your Game Center profile and, with your Game Center nickname
+          and avatar, on leaderboards other players can see, depending on your Game Center
+          settings;
+        </li>
+        <li>
+          the game does not send your Game Center details, achievements or scores to us or to
+          any ad service.
+        </li>
+      </ul>
+      <p>
+        Apple handles this information under
+        <a href="https://www.apple.com/legal/privacy/data/en/game-center/">Game Center &amp;
+        Privacy</a> and Apple's Privacy Policy. You can sign out of Game Center, or choose who
+        sees your activity, in Settings → Game Center. Wherever the game uses a game service,
+        that service may start when the game starts, may sign you in by itself if you already
+        have a profile with it, and may collect diagnostics about its own software whether or not
+        you sign in. It handles this information under its own privacy policy.
+      </p>
+
+      <h2>10. Changes to this policy</h2>
       <p>
         If this policy changes, we will update this page and the effective date above. If a
         change is significant, we will also mention it in the game's release notes.
       </p>
 
-      <h2>10. Contact</h2>
+      <h2>11. Contact</h2>
       <p>
         PharaohDev · <a href="mailto:pharaohmo21@gmail.com">pharaohmo21@gmail.com</a>
       </p>
